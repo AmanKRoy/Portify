@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio_ui_app/about.dart';
 import 'package:sliding_sheet2/sliding_sheet2.dart';
 
 class MyHome extends StatefulWidget {
@@ -95,7 +97,10 @@ class _MyWidgetState extends State<MyHome> {
                     return LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Colors.black, Colors.transparent],
+                      colors: [
+                        Color.fromARGB(255, 0, 0, 0),
+                        Colors.transparent
+                      ],
                     ).createShader(
                         Rect.fromLTRB(0, 0, rect.width, rect.height));
                   },
@@ -123,11 +128,14 @@ class _MyWidgetState extends State<MyHome> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Text(
                       'FRESHMEN',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 40,
+                        fontSize: 20,
                         fontWeight: FontWeight.w600,
                       ),
                     )
@@ -185,6 +193,62 @@ class _MyWidgetState extends State<MyHome> {
                           mySpec(Icons.android_sharp, "Android"),
                           mySpec(Icons.android_sharp, "Android"),
                           mySpec(Icons.android_sharp, "Android")
+                        ],
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      SizedBox(
+                        width: 100,
+                        child: TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MyAbout()),
+                            );
+                          },
+                          child: Text(
+                            "About Me",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          style: TextButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(222, 20, 158, 243),
+                              primary: Colors.white,
+                              minimumSize: Size(100, 40)),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                FontAwesomeIcons.instagram,
+                                color: Color.fromARGB(222, 20, 158, 243),
+                              )),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                FontAwesomeIcons.github,
+                                color: Color.fromARGB(222, 20, 158, 243),
+                              )),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                FontAwesomeIcons.linkedin,
+                                color: Color.fromARGB(222, 20, 158, 243),
+                              )),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                FontAwesomeIcons.twitter,
+                                color: Color.fromARGB(222, 20, 158, 243),
+                              )),
                         ],
                       )
                     ],
