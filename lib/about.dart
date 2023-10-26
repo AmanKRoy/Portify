@@ -92,7 +92,7 @@ class _MyAboutState extends State<MyAbout> {
                   tech(
                       text: "Just another engineering student with a knack for"
                           " coding and a newly developed interest in app developemt. "
-                          "\n\nAs an engineer, I thrive on the the challange to create elegant, "
+                          "\n\nAs an engineer in making , I thrive on the the challange to create elegant, "
                           "user, friendly, and efficient mobile apps"),
                   SizedBox(
                     height: 6.25,
