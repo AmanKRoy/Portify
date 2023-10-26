@@ -6,7 +6,7 @@ import 'package:sliding_sheet2/sliding_sheet2.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: 'homez',
+    initialRoute: 'home',
     debugShowCheckedModeBanner: false,
     routes: {
       'home': (context) => const MyHome(),

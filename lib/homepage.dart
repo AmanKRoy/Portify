@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_ui_app/about.dart';
 import 'package:sliding_sheet2/sliding_sheet2.dart';
+import "package:simple_icons/simple_icons.dart";
 
 class MyHome extends StatefulWidget {
   const MyHome({super.key});
@@ -71,7 +72,7 @@ class _MyWidgetState extends State<MyHome> {
         backgroundColor: Colors.transparent,
       ),
       body: SlidingSheet(
-        elevation: 8,
+        elevation: 2,
         cornerRadius: 50,
         snapSpec: const SnapSpec(
           // Enable snapping. This is true by default.
@@ -90,8 +91,9 @@ class _MyWidgetState extends State<MyHome> {
             children: [
               Container(
                 margin: EdgeInsets.only(
-                    top: /*I am writing 10 here you can change it as per your requirments*/
-                        50),
+                  left: 1,
+                  right: 10,
+                ),
                 child: ShaderMask(
                   shaderCallback: (rect) {
                     return LinearGradient(
@@ -107,10 +109,10 @@ class _MyWidgetState extends State<MyHome> {
                   blendMode: BlendMode.dstIn,
                   child: Image.asset(
                     'assets/bnw.png',
-                    height: /*you can add any no you like here*/ 400,
+                    height: /*you can add any no you like here*/ 500,
                     fit: BoxFit.cover,
-                    /*width: double.infinity,
-                  height: double.infinity,*/
+                    width: double.infinity,
+                    //height: double.infinity,
                   ),
                 ),
               ),
@@ -160,7 +162,7 @@ class _MyWidgetState extends State<MyHome> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       myAchiev('4', 'Projects'),
-                      myAchiev('8', 'Tech Stacks'),
+                      myAchiev('6', 'Tech Stacks'),
                       myAchiev('0', 'Clients'),
                     ],
                   ),
@@ -179,9 +181,9 @@ class _MyWidgetState extends State<MyHome> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          mySpec(Icons.android_sharp, "Android"),
-                          mySpec(Icons.android_sharp, "Android"),
-                          mySpec(Icons.android_sharp, "Android")
+                          mySpec(SimpleIcons.git, "Git"),
+                          mySpec(SimpleIcons.flutter, "Flutter"),
+                          mySpec(SimpleIcons.c, "C language")
                         ],
                       ),
                       SizedBox(
@@ -190,9 +192,9 @@ class _MyWidgetState extends State<MyHome> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          mySpec(Icons.android_sharp, "Android"),
-                          mySpec(Icons.android_sharp, "Android"),
-                          mySpec(Icons.android_sharp, "Android")
+                          mySpec(SimpleIcons.python, "Python"),
+                          mySpec(SimpleIcons.mysql, "MySQL"),
+                          mySpec(SimpleIcons.firebase, "Firebase")
                         ],
                       ),
                       SizedBox(

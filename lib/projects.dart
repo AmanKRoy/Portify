@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -12,7 +10,7 @@ class Bar extends StatelessWidget {
     return Container(
         margin: EdgeInsets.only(top: 15),
         decoration: BoxDecoration(
-            color: Colors.black, borderRadius: BorderRadius.circular(10)),
+            color: Colors.white, borderRadius: BorderRadius.circular(10)),
         padding: EdgeInsets.all(20),
         child: Row(
           children: [
@@ -39,7 +37,7 @@ class Project extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         body: Container(
           child: Bar(text: 'PROJECTS'),
         ));
