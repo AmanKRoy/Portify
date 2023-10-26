@@ -1,4 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_ui_app/projects.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+class tech extends StatelessWidget {
+  final String text;
+  const tech({super.key, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        margin: EdgeInsets.only(top: 15),
+        decoration: BoxDecoration(
+            color: Colors.white, borderRadius: BorderRadius.circular(20)),
+        padding: EdgeInsets.all(20),
+        child: Column(
+          children: [
+            Text(
+              text,
+              softWrap: true,
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold),
+            ),
+          ],
+        ));
+  }
+}
 
 class MyAbout extends StatefulWidget {
   const MyAbout({super.key});
@@ -21,9 +49,7 @@ class _MyAboutState extends State<MyAbout> {
         child: Stack(
           children: [
             Container(
-              margin: EdgeInsets.only(
-                  top: /*I am writing 10 here you can change it as per your requirments*/
-                      70),
+              margin: EdgeInsets.only(left: 20, right: 30),
               child: ShaderMask(
                 shaderCallback: (rect) {
                   return LinearGradient(
@@ -35,7 +61,7 @@ class _MyAboutState extends State<MyAbout> {
                 blendMode: BlendMode.dstIn,
                 child: Image.asset(
                   'assets/bnw.png',
-                  height: /*you can add any no you like here*/ 400,
+                  height: /*you can add any no you like here*/ 500,
                   fit: BoxFit.cover,
                   /*width: double.infinity,
                   height: double.infinity,*/
@@ -45,7 +71,7 @@ class _MyAboutState extends State<MyAbout> {
             Container(
               alignment: Alignment.center,
               margin: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.6),
+                  top: MediaQuery.of(context).size.height * 0.55),
               child: Column(
                 children: [
                   Text(
@@ -55,10 +81,6 @@ class _MyAboutState extends State<MyAbout> {
                       fontSize: 30,
                     ),
                   ),
-                  SizedBox(
-                    //change this as you see fit.
-                    height: 5,
-                  ),
                   Text(
                     "Aman Kumar",
                     style: TextStyle(
@@ -67,17 +89,43 @@ class _MyAboutState extends State<MyAbout> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  tech(
+                      text: "Just another engineering student with a knack for"
+                          " coding and a newly developed interest in app developemt. "
+                          "\n\nAs an engineer, I thrive on the the challange to create elegant, "
+                          "user, friendly, and efficient mobile apps"),
                   SizedBox(
-                    height: 1,
+                    height: 6.25,
                   ),
-                  Text(
-                    'FRESHMEN',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            FontAwesomeIcons.instagram,
+                            color: Color.fromARGB(222, 20, 158, 243),
+                          )),
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            FontAwesomeIcons.github,
+                            color: Color.fromARGB(222, 20, 158, 243),
+                          )),
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            FontAwesomeIcons.linkedin,
+                            color: Color.fromARGB(222, 20, 158, 243),
+                          )),
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            FontAwesomeIcons.twitter,
+                            color: Color.fromARGB(222, 20, 158, 243),
+                          )),
+                    ],
+                  )
                 ],
               ),
             )

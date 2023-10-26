@@ -16,13 +16,13 @@ class Bar extends StatelessWidget {
           children: [
             Icon(
               FontAwesomeIcons.github,
-              color: Colors.white,
+              color: Colors.black,
             ),
             SizedBox(width: 20),
             Text(
               text,
               style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 30,
                   fontWeight: FontWeight.bold),
             ),
