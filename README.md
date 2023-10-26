@@ -11,8 +11,8 @@ This is a flutter application that describes me and also acts as my standing por
 ## Installation
 
 ```bash
-git clone https://AmanKRoy/Portfolio_UI_App.git
-cd Portfolio_UI_App
+git clone https://AmanKRoy/Portfolio_App.git
+cd Portfolio_App
 flutter pub get
 ```
 
@@ -23,7 +23,8 @@ flutter pub get
 
 ## Credits
 
-- [Flutter](https://flutter.dev/)
-- [Dart](https://dart.dev/)
+- [FLUTTER](https://flutter.dev/)
+- [DART](https://dart.dev/)
 - [VS CODE](https://code.visualstudio.com/)
-
+- [SLIDING SHEET WIDGET](https://pub.dev/packages/sliding_sheet)
+- [FONT AWESOME PACKAGE](https://pub.dev/packages/font_awesome_flutter)
