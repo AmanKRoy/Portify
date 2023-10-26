@@ -2,13 +2,13 @@
 This is a flutter application that describes me and also acts as my standing portfolio.
 
 
-## Table of Contents
+##  TABLE OF CONTENTS
 
 - [Installation](#installation)
 - [Screenshots](#screenshots)
 - [Credits](#credits)
 
-## Installation
+## INSTALLATION
 
 ```bash
 git clone https://AmanKRoy/Portfolio_App.git
@@ -16,12 +16,14 @@ cd Portfolio_App
 flutter pub get
 ```
 
-## Screenshots
+## SCREENSHOTS
 
- <img src="./assets/ss.png" width=300 height=640>
+### Home Window
+
+ <img src="./assets/home.png" width=300 height=640>
 
 
-## Credits
+## credits
 
 - [FLUTTER](https://flutter.dev/)
 - [DART](https://dart.dev/)
